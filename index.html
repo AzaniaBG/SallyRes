@@ -27,23 +27,24 @@
     //create App component that returns, h1, h2, and address elements
     function App() {
         return (           
-            <section>
-                <h1>Sally Student's Resume</h1>
-                <h2>Name</h2>
-                <h2>Employment History</h2>
-                    <h3>Company Name</h3>
+            <main>
+                <h1 className="headers">Sally Student's Resume</h1>
+                <section id="employment-and-edu">
+                <h2 className="headers">Name</h2>
+                <h2 className="headers">Employment History</h2>
+                    <h3 id="employment">Company Name</h3>
                     <p>Employment Dates</p>
                     <p>Description</p>
-                <h2>Education</h2>
-                <address>
-                <h2>Contact Information</h2>
-                <ul>
+                <h2 id="edu" className="headers">Education</h2>
+                </section>
+                <address id="contact-info">
+                <h2 className="headers">Contact Information</h2>
+                <ul className="contact-links">
                     <li><a>Phone Number</a></li>
-                    <li><a>Email Address</a></li>
-                    
+                    <li><a>Email Address</a></li>                   
                 </ul>
                 </address>
-            </section>
+            </main>
         )
     }
     //render App component to the DOM
