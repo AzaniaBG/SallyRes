@@ -24,16 +24,19 @@
 <!--insert JS directly into HTML-->
 <script type="text/babel">
     const appRoot = document.querySelector("#application-root");
-    //create App component
+    //create App component that returns, h1, h2, and address elements
     function App() {
         return (           
-            <div>
+            <section>
                 <h1>Sally Student's Resume</h1>
                 <h2>Name</h2>
                 <h2>Employment History</h2>
+                    <h3>Company Name</h3>
+                    <p>Employment Dates</p>
+                    <p>Description</p>
                 <h2>Education</h2>
                 <address>Contact Information</address>
-            </div>
+            </section>
         )
     }
     //render App component to the DOM
