@@ -8,7 +8,7 @@
 <body>
     <!--create APP  component to render the full resume-->
     <div id="application-root"></div>
-    <header>
+    <!-- <header>
     </header>
     <main>
         <section>
@@ -21,7 +21,7 @@
         </address>
         <section>Work Experience</section>
         <section>Education</section>
-    </main>
+    </main> -->
 
 <!--add Babel to compile JSX to JS-->
 <script type="text/babel" 
@@ -34,6 +34,36 @@
   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> 
 </script>
 <!--insert JS directly into HTML-->
-<script></script>
+<script type="text/babel">
+    const appRoot = document.querySelector("#application-root");
+    //create App component
+    function App() {
+        return (
+            <header role="header">
+                <h1>Sally Student's Resume</h1>
+            </header>
+                <main>
+                    <h2>Name</h2>
+                    <section>
+                        <h2>Employment History</h2>
+                        <h2>Education</h2>
+                        <ul>
+                            <li>Company Name</li>
+                            <li>Job Title</li>
+                            <li>Employment Dates</li>
+                            <li>Short Description</li>
+                        </ul>                       
+                    </section>
+                    <address>
+                        <h2>Contact Information</h2>
+                        <a>Email Address</a>
+                        <a>Phone Number</a>
+                    </address>
+                </main>
+        )
+    }
+    //render App component to the DOM
+    ReactDOM.render(<App />, appRoot);
+</script>
 </body>
 </html>
