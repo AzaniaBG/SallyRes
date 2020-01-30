@@ -20,34 +20,20 @@
   src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> 
 </script>
 <script  
-src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 <!--insert JS directly into HTML-->
 <script type="text/babel">
     const appRoot = document.querySelector("#application-root");
     //create App component
     function App() {
-        return (
-            <header role="header">
+        return (           
+            <div>
                 <h1>Sally Student's Resume</h1>
-            </header>
-                // <main>
-                //     <h2>Name</h2>
-                //     <section>
-                //         <h2>Employment History</h2>
-                //         <h2>Education</h2>
-                //         <ul>
-                //             <li>Company Name</li>
-                //             <li>Job Title</li>
-                //             <li>Employment Dates</li>
-                //             <li>Short Description</li>
-                //         </ul>                       
-                //     </section>
-                //     <address>
-                //         <h2>Contact Information</h2>
-                //         <a>Email Address</a>
-                //         <a>Phone Number</a>
-                //     </address>
-                // </main>
+                <h2>Name</h2>
+                <h2>Employment History</h2>
+                <h2>Education</h2>
+                <address>Contact Information</address>
+            </div>
         )
     }
     //render App component to the DOM
